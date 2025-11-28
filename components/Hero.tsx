@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         <div className="pt-8">
           <a 
             href="#books" 
-            className="group inline-flex items-center gap-3 bg-stone-900 text-white px-8 py-4 rounded-sm font-sans font-medium tracking-wide hover:bg-stone-800 transition-all hover:-translate-y-1 shadow-lg shadow-stone-200"
+            className="group inline-flex items-center gap-3 bg-amber-900 text-white px-8 py-4 rounded-sm font-sans font-medium tracking-wide hover:bg-stone-900 transition-all hover:-translate-y-1 shadow-lg shadow-stone-200"
           >
             Explore The Books
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
