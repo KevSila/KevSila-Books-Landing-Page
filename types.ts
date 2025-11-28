@@ -28,3 +28,15 @@ export interface Author {
   image: string;
   tagline: string;
 }
+
+export interface Testimonial {
+  id: string;
+  quote: string;
+  author: string;
+  role: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}

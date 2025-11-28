@@ -5,16 +5,17 @@ import { ArrowDown } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <header className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-20">
-      <div className="max-w-3xl space-y-8 animate-fade-in-up">
+      <div className="max-w-4xl space-y-8 animate-fade-in-up">
         <span className="inline-block px-3 py-1 rounded-full bg-stone-200 text-stone-600 text-xs tracking-widest uppercase font-semibold">
-          Author & Thinker
-        </span>
-        <h1 className="font-display text-5xl md:text-7xl text-stone-900 leading-tight">
-          Ancient Truths for <br />
-          <span className="italic font-serif text-stone-600">Modern Living</span>
-        </h1>
-        <p className="font-serif text-xl md:text-2xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
           {AUTHOR.tagline}
+        </span>
+        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-stone-900 leading-tight">
+          From Ancient Wisdom to <br />
+          <span className="italic font-serif text-stone-600">Digital Clarity</span>: <br />
+          Principles for a Life Well-Lived
+        </h1>
+        <p className="font-serif text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          A Practical Guide to Building Enduring Character and Finding Focus in the Modern Age
         </p>
         <div className="pt-8">
           <a 
