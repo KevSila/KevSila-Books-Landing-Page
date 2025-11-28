@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
         serif: ['Lora', 'serif'],
-        display: ['Cinzel', 'serif'],
+        display: ['Merriweather', 'serif'],
       },
       colors: {
         stone: {
