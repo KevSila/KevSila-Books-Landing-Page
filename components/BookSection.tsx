@@ -1,6 +1,6 @@
 import React from 'react';
 import { BOOKS } from '../data';
-import { ShoppingBag, CheckCircle2 } from 'lucide-react';
+import { ShoppingBag, ExternalLink, Clock } from 'lucide-react';
 
 const BookSection: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const BookSection: React.FC = () => {
         {BOOKS.map((book, index) => (
           <div 
             key={book.id} 
-            className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
+            className={`flex flex-col md:flex-row gap-12 items-start md:items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
           >
             {/* Book Cover Side */}
             <div className="w-full md:w-1/2 flex justify-center">
@@ -25,7 +25,7 @@ const BookSection: React.FC = () => {
             </div>
 
             {/* Content Side */}
-            <div className="w-full md:w-1/2 space-y-6">
+            <div className="w-full md:w-1/2 space-y-8">
               <div className="space-y-2">
                 <span className="text-stone-500 text-sm font-bold tracking-widest uppercase">{book.subtitle}</span>
                 <h2 className="font-display text-4xl md:text-5xl text-stone-900">{book.title}</h2>
@@ -45,21 +45,45 @@ const BookSection: React.FC = () => {
                 ))}
               </div>
 
-              <div className="pt-6 flex items-center gap-6">
-                <a 
-                  href={book.buyLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-stone-900 text-white px-8 py-4 rounded-md font-medium hover:bg-stone-700 transition-colors shadow-lg hover:shadow-xl"
-                >
-                  <ShoppingBag className="w-5 h-5" />
-                  <span>Buy Now {book.price}</span>
-                </a>
-                <div className="flex items-center gap-2 text-stone-500 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
-                  <span>Instant Download</span>
+              {/* Purchasing Options */}
+              <div className="pt-4 border-t border-stone-200">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-stone-400 mb-4">Select Format</h3>
+                <div className="grid gap-4">
+                  {book.formats.map((format) => (
+                    <div key={format.type} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-50 rounded-lg border border-stone-100">
+                      <div className="mb-3 sm:mb-0">
+                        <div className="flex items-center gap-2">
+                          <span className="font-display font-semibold text-stone-900">{format.type}</span>
+                          <span className="text-stone-500 text-sm">{format.price}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-2">
+                        {format.available && format.links.length > 0 ? (
+                          format.links.map((link) => (
+                            <a 
+                              key={link.label}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 bg-stone-900 text-white text-sm px-4 py-2 rounded hover:bg-stone-700 transition-colors"
+                            >
+                              <ShoppingBag className="w-3 h-3" />
+                              {link.label.replace('Buy on ', '')}
+                            </a>
+                          ))
+                        ) : (
+                          <div className="flex items-center gap-2 text-stone-400 text-sm italic px-2">
+                            <Clock className="w-3 h-3" />
+                            <span>Coming Soon</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
+
             </div>
           </div>
         ))}

@@ -1,14 +1,25 @@
+export interface BookLink {
+  label: string;
+  url: string;
+}
+
+export interface BookFormat {
+  type: 'Ebook' | 'Paperback' | 'Hardcover';
+  price: string;
+  available: boolean;
+  links: BookLink[];
+}
+
 export interface Book {
   id: string;
   title: string;
   subtitle: string;
   description: string;
   longDescription: string[];
-  price: string;
   coverImage: string;
-  buyLink: string;
   themeColor: string;
   tags: string[];
+  formats: BookFormat[];
 }
 
 export interface Author {

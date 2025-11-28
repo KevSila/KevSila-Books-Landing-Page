@@ -22,12 +22,32 @@ export const BOOKS: Book[] = [
       "Blending biblical narrative with modern psychology, Firelit Wisdom invites you to return to the warmth of the fire—where stories were told, character was forged, and elders passed the torch to the next generation.",
       "This book is an anchor for a restless age."
     ],
-    price: "$14.99", // Example price
-    // Acacia tree at sunset/fire vibe
     coverImage: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=600&h=900&auto=format&fit=crop", 
-    buyLink: "#", // User to replace with Gumroad/Amazon link
     themeColor: "bg-orange-50",
-    tags: ["Biblical Narrative", "Psychology", "Leadership", "Legacy"]
+    tags: ["Biblical Narrative", "Psychology", "Leadership", "Legacy"],
+    formats: [
+      {
+        type: "Ebook",
+        price: "$5.99",
+        available: true,
+        links: [
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
+          { label: "Buy on Selar", url: "https://selar.com/6z86mz4264" }
+        ]
+      },
+      {
+        type: "Paperback",
+        price: "$14.99",
+        available: false, // Coming soon
+        links: []
+      },
+      {
+        type: "Hardcover",
+        price: "$24.99",
+        available: false, // Coming soon
+        links: []
+      }
+    ]
   },
   {
     id: "solitude-digital",
@@ -39,11 +59,28 @@ export const BOOKS: Book[] = [
       "It is not merely a critique—it is a roadmap back to depth. It offers practical practices of solitude, slowness, movement, and digital boundaries.",
       "Start small: One unshared breath at a time. Let solitude rebuild what digital life has fragmented."
     ],
-    price: "$14.99", // Example price
-    // Silhouette walking in busy city with light trails
     coverImage: "https://images.unsplash.com/photo-1496347646636-ea47f7d6b37b?q=80&w=600&h=900&auto=format&fit=crop",
-    buyLink: "#", // User to replace
     themeColor: "bg-blue-50",
-    tags: ["Digital Detox", "Mental Health", "Focus", "Culture"]
+    tags: ["Digital Detox", "Mental Health", "Focus", "Culture"],
+    formats: [
+      {
+        type: "Ebook",
+        price: "$5.99",
+        available: false, // Links coming soon
+        links: []
+      },
+      {
+        type: "Paperback",
+        price: "$14.99",
+        available: false,
+        links: []
+      },
+      {
+        type: "Hardcover",
+        price: "$24.99",
+        available: false,
+        links: []
+      }
+    ]
   }
 ];
