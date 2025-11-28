@@ -31,8 +31,8 @@ export const BOOKS: Book[] = [
         price: "$5.99",
         available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
-          { label: "Buy on Selar", url: "https://selar.com/6z86mz4264" }
+          { label: "Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
+          { label: "Selar", url: "https://selar.com/6z86mz4264" }
         ]
       },
       {

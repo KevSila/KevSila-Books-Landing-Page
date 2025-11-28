@@ -1,6 +1,6 @@
 import React from 'react';
 import { BOOKS } from '../data';
-import { ShoppingBag, ExternalLink, Clock } from 'lucide-react';
+import { ShoppingBag, Clock } from 'lucide-react';
 
 const BookSection: React.FC = () => {
   return (
@@ -58,7 +58,7 @@ const BookSection: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="flex gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {format.available && format.links.length > 0 ? (
                           format.links.map((link) => (
                             <a 
@@ -69,7 +69,7 @@ const BookSection: React.FC = () => {
                               className="flex items-center gap-2 bg-stone-900 text-white text-sm px-4 py-2 rounded hover:bg-stone-700 transition-colors"
                             >
                               <ShoppingBag className="w-3 h-3" />
-                              {link.label.replace('Buy on ', '')}
+                              <span className="whitespace-nowrap">{link.label.replace('Buy on ', '')}</span>
                             </a>
                           ))
                         ) : (
