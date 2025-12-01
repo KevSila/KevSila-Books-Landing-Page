@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-stone-100/50">
       <div className="max-w-4xl mx-auto px-6 text-center space-y-12">
-        <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-stone-200">
+        <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-amber-600">
             {/* Using a generic silhouette if placeholder fails, but styled nicely */}
             <img src={AUTHOR.image} alt={AUTHOR.name} className="w-full h-full object-cover" />
         </div>
