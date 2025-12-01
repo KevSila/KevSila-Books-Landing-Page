@@ -13,11 +13,11 @@ const BookSection: React.FC = () => {
           >
             {/* Book Cover Side */}
             <div className="w-full md:w-1/2 flex justify-center">
-              <div className={`relative w-64 md:w-80 aspect-[2/3] shadow-2xl rounded-sm overflow-hidden transform transition-transform hover:-translate-y-2 duration-500 ${book.themeColor}`}>
+              <div className="relative w-64 md:w-80 aspect-[2/3] shadow-2xl rounded-sm overflow-hidden transform transition-transform hover:-translate-y-2 duration-500 bg-stone-100">
                 <img 
                   src={book.coverImage} 
                   alt={book.title} 
-                  className="w-full h-full object-cover mix-blend-multiply opacity-90"
+                  className="w-full h-full object-cover"
                 />
                 {/* Visual Spine Effect */}
                 <div className="absolute left-0 top-0 h-full w-2 bg-black/10 bg-gradient-to-r from-white/20 to-transparent"></div>
