@@ -18,9 +18,12 @@ export const BOOKS: Book[] = [
     subtitle: "Ancient Truths For Modern Living",
     description: "Discover 13 timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
     longDescription: [
-      "We are drowning in information but starving for wisdom. We have endless options, yet struggle to find the path.",
-      "Blending biblical narrative with modern psychology, Firelit Wisdom invites you to return to the warmth of the fire—where stories were told, character was forged, and elders passed the torch to the next generation.",
-      "This book is an anchor for a restless age."
+      "We are drowning in information but starving for wisdom. Where can we find an anchor for a life that lasts? Firelit Wisdom is a profound guide that fuses timeless biblical narratives with practical psychological insights to solve modern problems.",
+      "Inside, you will explore:",
+      "• The psychological cost of poor discernment and how to make truly wise decisions.",
+      "• How ancient rituals can forge enduring character and leadership that transcends trends.",
+      "• The principles for building a lasting legacy and passing essential wisdom to the next generation.",
+      "A return to the 'firelit heart,' where true strength and clarity are discovered. This book offers a blueprint for intentional living, teaching you how to use enduring principles to navigate the relentless complexity of the modern world."
     ],
     coverImage: "/images/firelit-cover.jpg", 
     themeColor: "bg-orange-50",
@@ -55,9 +58,11 @@ export const BOOKS: Book[] = [
     subtitle: "Reclaiming Depth and Focus in a Digitally Noisy World",
     description: "A cultural and psychological exploration of how constant connectivity reshapes our minds and relationships.",
     longDescription: [
-      "This book began as a realization of how digital media reshapes our world. It explores the silent crowds, the dopamine drips, and the vanishing friendships of our time.",
-      "It is not merely a critique—it is a roadmap back to depth. It offers practical practices of solitude, slowness, movement, and digital boundaries.",
-      "Start small: One unshared breath at a time. Let solitude rebuild what digital life has fragmented."
+      "We are living in an era of constant connection and crippling loneliness. Solitude in the Digital Age is your essential roadmap back to focus, presence, and a thriving inner life. This book delves deep into the topics you need to master:",
+      "• The Science of Isolation: Understanding the biological cost of dopamine drips, the anxiety of being 'Always On,' and how constant data leads to mental fragmentation.",
+      "• The Art of Reclaiming: Practical guidance on implementing intentional solitude, the power of slowness, and how movement can reset the mind.",
+      "• The Blueprint for Boundaries: How to practice Digital Minimalism Without Extremes to protect your attention and energy.",
+      "This book is a powerful, non-judgmental cultural critique and a practical survival guide for anyone ready to rebuild the depth that the noisy digital world has fragmented."
     ],
     coverImage: "/images/solitude-cover.jpg",
     themeColor: "bg-blue-50",
