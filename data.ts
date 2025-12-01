@@ -27,7 +27,7 @@ export const BOOKS: Book[] = [
     ],
     coverImage: "/images/firelit-cover.jpg", 
     themeColor: "bg-orange-50",
-    tags: ["Biblical Narrative", "Psychology", "Leadership", "Legacy"],
+    tags: ["TimelessWisdom", "CharacterDevelopment", "ChristianLeadership", "LegacyBuilding"],
     formats: [
       {
         type: "Ebook",
@@ -70,7 +70,7 @@ export const BOOKS: Book[] = [
     ],
     coverImage: "/images/solitude-cover.jpg",
     themeColor: "bg-blue-50",
-    tags: ["Digital Detox", "Mental Health", "Focus", "Culture"],
+    tags: ["DigitalMinimalism", "MentalClarity", "IntentionalLiving", "Psychology"],
     formats: [
       {
         type: "Ebook",

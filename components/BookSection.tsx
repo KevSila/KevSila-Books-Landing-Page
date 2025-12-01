@@ -33,16 +33,24 @@ const BookSection: React.FC = () => {
               
               <div className="flex flex-wrap gap-2">
                 {book.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-stone-100 text-stone-600 text-xs rounded-full">
+                  <span key={tag} className="px-3 py-1 bg-amber-600 text-white text-xs rounded-full">
                     #{tag}
                   </span>
                 ))}
               </div>
 
               <div className="font-serif text-lg text-stone-600 space-y-4 leading-relaxed">
-                {book.longDescription.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
+                {book.longDescription.map((para, i) => {
+                  const isBullet = para.startsWith('•');
+                  return (
+                    <p 
+                      key={i} 
+                      className={isBullet ? "pl-4 text-stone-700 font-medium" : ""}
+                    >
+                      {para}
+                    </p>
+                  );
+                })}
               </div>
 
               {/* Purchasing Options */}
