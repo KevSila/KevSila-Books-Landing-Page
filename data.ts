@@ -41,14 +41,18 @@ export const BOOKS: Book[] = [
       {
         type: "Paperback",
         price: "$14.99",
-        available: false, // Coming soon
-        links: []
+        available: true,
+        links: [
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/9914779050?ref_=pe_93986420_774957520" }
+        ]
       },
       {
         type: "Hardcover",
         price: "$24.99",
-        available: false, // Coming soon
-        links: []
+        available: true,
+        links: [
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G4KBQMVF?ref_=pe_93986420_774957520" }
+        ]
       }
     ]
   },
