@@ -5,9 +5,9 @@ export const AUTHOR: Author = {
   tagline: "Author & Cultural Critic",
   image: "/images/author.jpg", 
   bio: [
-    "Kevin Yumbya Sila is a Kenyan author who blends a technical background in mathematics and computer science with deep psychological insight. He draws from personal rediscovery to explore modern life's hidden costs.",
-    "His work focuses on cultural critique without judgment, offering practical paths to presence in an 'always-on' world. When not writing, he finds renewal in unshared walks and meaningful conversations.",
-    "He invites readers to return to the warmth of the fire—where stories were told and character was forged."
+    "Kevin Sila is a Kenyan author and cultural critic known for his unique approach: merging a technical background in mathematics and computer science with deep philosophical and psychological insight.",
+    "His work serves as a Wisdom Bridge, exploring the hidden costs of the digital age and offering practical blueprints for personal resilience. Through books like Firelit Wisdom and Solitude in the Digital Age, he guides readers to build enduring character, reclaim focus, and cultivate a life of purpose.",
+    "His writing is grounded in personal rediscovery and cultural critique, delivered without judgment, and focused on creating paths to presence in an 'always-on' world. When not writing, he finds renewal in unshared walks and meaningful conversations."
   ]
 };
 
