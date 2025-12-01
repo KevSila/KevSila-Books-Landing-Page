@@ -74,7 +74,7 @@ const BookSection: React.FC = () => {
                               href={link.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-2 bg-stone-900 text-white text-sm px-4 py-2 rounded hover:bg-stone-700 transition-colors"
+                              className="flex items-center gap-2 bg-amber-600 text-white text-sm px-4 py-2 rounded hover:bg-amber-700 transition-colors"
                             >
                               <ShoppingBag className="w-3 h-3" />
                               <span className="whitespace-nowrap">{link.label.replace('Buy on ', '')}</span>

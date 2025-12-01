@@ -13,7 +13,7 @@ const About: React.FC = () => {
         
         <div className="space-y-4">
           <h2 className="font-display text-3xl text-stone-900">About {AUTHOR.name}</h2>
-          <div className="w-16 h-1 bg-stone-300 mx-auto"></div>
+          <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
         </div>
 
         <div className="font-serif text-xl text-stone-700 leading-relaxed space-y-6">
