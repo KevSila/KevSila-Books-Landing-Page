@@ -25,7 +25,7 @@ export const BOOKS: Book[] = [
       "• The principles for building a lasting legacy and passing essential wisdom to the next generation.",
       "A return to the 'firelit heart,' where true strength and clarity are discovered. This book offers a blueprint for intentional living, teaching you how to use enduring principles to navigate the relentless complexity of the modern world."
     ],
-    coverImage: "/images/book-firelit.jpg", 
+    coverImage: "/images/firelit-cover.jpg", 
     themeColor: "bg-orange-50",
     tags: ["TimelessWisdom", "CharacterDevelopment", "ChristianLeadership", "LegacyBuilding"],
     formats: [
