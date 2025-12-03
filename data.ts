@@ -68,7 +68,7 @@ export const BOOKS: Book[] = [
       "• The Blueprint for Boundaries: How to practice Digital Minimalism Without Extremes to protect your attention and energy.",
       "This book is a powerful, non-judgmental cultural critique and a practical survival guide for anyone ready to rebuild the depth that the noisy digital world has fragmented."
     ],
-    coverImage: "/images/solitude-cover.jpg",
+    coverImage: "/images/book-solitude.jpg",
     themeColor: "bg-blue-50",
     tags: ["DigitalMinimalism", "MentalClarity", "IntentionalLiving", "Psychology"],
     formats: [
