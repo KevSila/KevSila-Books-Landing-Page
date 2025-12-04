@@ -35,7 +35,8 @@ export const BOOKS: Book[] = [
         available: true,
         links: [
           { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
-          { label: "Buy on Selar", url: "https://selar.com/6z86mz4264" }
+          { label: "Buy on Selar", url: "https://selar.com/6z86mz4264" },
+          { label: "Buy on Nuria", url: "https://nuriakenya.com/product/firelit-wisdom-ancient-truths-for-modern-living/" }
         ]
       },
       {
