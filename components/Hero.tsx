@@ -13,11 +13,13 @@ const Hero: React.FC = () => {
         
         {/* Main Title */}
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-stone-900 leading-[1.2] md:leading-tight tracking-tight font-bold">
-          From Gaining Wisdom to <br />
-          <span className="italic font-serif font-normal text-stone-600">Digital Clarity</span>: <br />
+          Forge Enduring Character <br /> 
+          and Find <span className="italic font-serif font-normal text-stone-600">Digital Clarity</span> <br />
+          Using Lessons from Past Generations.
+          <br />
           
           {/* Stylish Line Container */}
-          <span className="relative inline-block mt-3 md:mt-4">
+          <span className="relative inline-block mt-3 md:mt-6">
             <span className="relative z-10 font-display italic font-semibold text-stone-900">
               Principles for a Life Well-Lived
             </span>
@@ -38,11 +40,6 @@ const Hero: React.FC = () => {
             </svg>
           </span>
         </h1>
-        
-        {/* Subtitle */}
-        <p className="font-serif text-lg md:text-2xl text-stone-700 max-w-2xl mx-auto leading-relaxed opacity-90">
-          A Guide to Building Enduring Character and Finding Focus in the Modern Age
-        </p>
         
         <div className="pt-8">
           <a 

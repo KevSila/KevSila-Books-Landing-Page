@@ -2,7 +2,7 @@ import { Book, Author, Testimonial, FAQItem } from './types';
 
 export const AUTHOR: Author = {
   name: "Kevin Yumbya Sila",
-  tagline: "Author & Cultural Critic",
+  tagline: "Author",
   image: "/images/author.jpg", 
   bio: [
     "Kevin Sila is a Kenyan author and cultural critic known for his unique approach: merging a technical background in mathematics and computer science with deep philosophical and psychological insight.",
@@ -18,12 +18,14 @@ export const BOOKS: Book[] = [
     subtitle: "Ancient Truths For Modern Living",
     description: "Discover 13 timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
     longDescription: [
-      "We are drowning in information but starving for wisdom. Where can we find an anchor for a life that lasts? Firelit Wisdom is a profound guide that fuses timeless biblical narratives with practical psychological insights to solve modern problems.",
-      "Inside, you will explore:",
-      "• The psychological cost of poor discernment and how to make truly wise decisions.",
-      "• How ancient rituals can forge enduring character and leadership that transcends trends.",
-      "• The principles for building a lasting legacy and passing essential wisdom to the next generation.",
-      "A return to the 'firelit heart,' where true strength and clarity are discovered. This book offers a blueprint for intentional living, teaching you how to use enduring principles to navigate the relentless complexity of the modern world."
+      "We are drowning in information but starving for the wisdom that truly lasts. You don't need a new trend; you need a bedrock foundation for living.",
+      "Firelit Wisdom is a powerful guide that uses engaging, creative storytelling from the Bible and pairs these ancient lessons with practical insights for your daily life, modern challenges, and professional ventures.",
+      "This book provides you with the fundamental, timeless principles (the \"ancient anchors\") for character and conduct. It shows you that the core challenges you face—in leadership, decision-making, and personal growth—have been navigated for millennia. By mastering these essentials, you will lay the groundwork for a truly fulfilled life.",
+      "Inside, you will master 13 timeless principles covering:",
+      "• Character and Self-Improvement: How to become a better person by integrating timeless lessons into your life and realizing that all your current challenges have been faced before.",
+      "• Leadership and Conflict: The fundamentals of handling difficult situations and leading others with humility and integrity.",
+      "• Legacy Building: Practical steps for achieving a fulfilled life and passing on essential wisdom to the next generation.",
+      "This book is a blueprint for understanding life's most essential fundamentals and building a lasting, intentional character."
     ],
     coverImage: "/images/firelit-cover.jpg", 
     themeColor: "bg-orange-50",
@@ -63,11 +65,12 @@ export const BOOKS: Book[] = [
     subtitle: "Reclaiming Depth and Focus in a Digitally Noisy World",
     description: "A cultural and psychological exploration of how constant connectivity reshapes our minds and relationships.",
     longDescription: [
-      "We are living in an era of constant connection and crippling loneliness. Solitude in the Digital Age is your essential roadmap back to focus, presence, and a thriving inner life. This book delves deep into the topics you need to master:",
-      "• The Science of Isolation: Understanding the biological cost of dopamine drips, the anxiety of being 'Always On,' and how constant data leads to mental fragmentation.",
-      "• The Art of Reclaiming: Practical guidance on implementing intentional solitude, the power of slowness, and how movement can reset the mind.",
-      "• The Blueprint for Boundaries: How to practice Digital Minimalism Without Extremes to protect your attention and energy.",
-      "This book is a powerful, non-judgmental cultural critique and a practical survival guide for anyone ready to rebuild the depth that the noisy digital world has fragmented."
+      "We are constantly connected, yet always somehow distracted. The digital age has reshaped our interactions, making deep presence difficult and turning true connection into superficial performance. Solitude in the Digital Age is your essential roadmap to understanding the invisible costs of the modern world and reclaiming your focus, depth, and inner peace.",
+      "This book is not just a digital critique; it’s a detailed guide that clearly explains:",
+      "• The Unseen Psychological Costs: How the rise of performance culture on social media and the \"always-on\" economy are fundamentally changing how you experience places, people, and life itself—often without you realizing the emotional and biological toll.",
+      "• The Science of Fragmentation: Understanding the biological cost of dopamine addiction, the anxiety of endless information, and how this leads to mental fog and burnout.",
+      "• The Path to Identifying and Mitigating these modern-day changes: Practical, non-extreme strategies for implementing Digital Minimalism and intentional slowness to protect your attention and energy.",
+      "• For Lasting Change: To ensure you don't just read the book but apply it, every chapter ends with Reflection Prompts that help you analyze your current habits and immediately improve your life chapter-by-chapter."
     ],
     coverImage: "/images/book-solitude.jpg",
     themeColor: "bg-blue-50",
