@@ -14,8 +14,7 @@ const Hero: React.FC = () => {
         {/* Main Title */}
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-stone-900 leading-[1.2] md:leading-tight tracking-tight font-bold">
           Forge Enduring Character <br /> 
-          and Find <span className="italic font-serif font-normal text-stone-600">Digital Clarity</span> <br />
-          Using Lessons from Past Generations.
+          and Find <span className="italic font-serif font-normal text-stone-600">Digital Clarity</span>.
           <br />
           
           {/* Stylish Line Container */}
