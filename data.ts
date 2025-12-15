@@ -79,8 +79,10 @@ export const BOOKS: Book[] = [
       {
         type: "Ebook",
         price: "$5.99",
-        available: false, // Links coming soon
-        links: []
+        available: true,
+        links: [
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G71Y1G2D" }
+        ]
       },
       {
         type: "Paperback",
@@ -115,7 +117,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: "t3",
     quote: "Kevin Sila's writing is a rare blend of poetic reflection and clear, actionable strategy. He helps you see the world with new eyes and equips you to live better.",
     author: "P. Ochieng",
-    role: "Author & Mentor"
+    role: "Author"
   }
 ];
 
