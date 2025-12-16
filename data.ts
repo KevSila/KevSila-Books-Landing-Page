@@ -87,14 +87,18 @@ export const BOOKS: Book[] = [
       {
         type: "Paperback",
         price: "$14.99",
-        available: false,
-        links: []
+        available: true,
+        links: [
+            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G7CPXXRJ" }
+        ]
       },
       {
         type: "Hardcover",
         price: "$24.99",
-        available: false,
-        links: []
+        available: true,
+        links: [
+            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G7D51J28" }
+        ]
       }
     ]
   }
@@ -117,7 +121,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: "t3",
     quote: "Kevin Sila's writing is a rare blend of poetic reflection and clear, actionable strategy. He helps you see the world with new eyes and equips you to live better.",
     author: "P. Ochieng",
-    role: "Author"
+    role: "Author & Mentor"
   }
 ];
 
