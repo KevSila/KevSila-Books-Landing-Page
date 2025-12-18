@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 space-y-4">
           <h2 className="font-display text-3xl md:text-4xl text-white">What Readers Are Saying</h2>
-          <div className="w-16 h-1 bg-stone-700 mx-auto"></div>
+          <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
