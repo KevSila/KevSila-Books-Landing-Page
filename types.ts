@@ -16,6 +16,7 @@ export interface AudioPreview {
   sourceUrl: string;
   heading: string;
   description: string;
+  theme?: 'dark' | 'firelit';
 }
 
 export interface Book {

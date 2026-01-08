@@ -57,7 +57,15 @@ export const BOOKS: Book[] = [
           { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G4KBQMVF?ref_=pe_93986420_774957520" }
         ]
       }
-    ]
+    ],
+    audioPreview: {
+      heading: "Listen to the Deep Dive",
+      description: "In a world of endless data, we often lose the very wisdom our ancestors held. Listen to this exploration of how to quiet the digital noise and return to the firelight of true understanding.",
+      title: "Firelit Wisdom: Starving for Wisdom in an Age of Information",
+      subtitle: "14-Minute Deep Dive into Ancestral Truths",
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767872555/Information_Overload_Starving_for_Wisdom_wustrp.mp4",
+      theme: 'firelit'
+    }
   },
   {
     id: "solitude-digital",
@@ -106,7 +114,8 @@ export const BOOKS: Book[] = [
       description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
       title: "Reclaiming Presence in the Digital Age",
       subtitle: "14-Minute Executive Summary",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4"
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
+      theme: 'dark'
     }
   }
 ];
