@@ -106,7 +106,8 @@ export const BOOKS: Book[] = [
       description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
       title: "Reclaiming Presence in the Digital Age",
       subtitle: "14-Minute Executive Summary",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4"
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
+      thumbnailUrl: "/images/book-solitude.jpg" // You can change this to a specific square audio cover later
     }
   }
 ];
