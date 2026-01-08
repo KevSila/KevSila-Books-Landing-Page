@@ -16,7 +16,6 @@ export interface AudioPreview {
   sourceUrl: string;
   heading: string;
   description: string;
-  thumbnailUrl?: string; // Specific image for the audio player
 }
 
 export interface Book {
