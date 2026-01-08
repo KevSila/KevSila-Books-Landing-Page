@@ -70,16 +70,13 @@ const DeepDiveAudio: React.FC<DeepDiveAudioProps> = ({ audio, coverImage }) => {
         </div>
       </div>
       
-      <div className="mt-4 flex justify-between items-center">
-        {isFirelit && (
-          <div className="flex gap-1">
-             <div className="w-1.5 h-1.5 rounded-full bg-orange-500/60 animate-bounce" style={{ animationDelay: '0s' }}></div>
-             <div className="w-1.5 h-1.5 rounded-full bg-orange-500/40 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-             <div className="w-1.5 h-1.5 rounded-full bg-orange-500/20 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-          </div>
-        )}
-        <span className="text-[10px] text-stone-600 uppercase tracking-widest font-bold ml-auto">Cloudinary x Netlify Hosted</span>
-      </div>
+      {isFirelit && (
+        <div className="mt-4 flex gap-1">
+           <div className="w-1.5 h-1.5 rounded-full bg-orange-500/60 animate-bounce" style={{ animationDelay: '0s' }}></div>
+           <div className="w-1.5 h-1.5 rounded-full bg-orange-500/40 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+           <div className="w-1.5 h-1.5 rounded-full bg-orange-500/20 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+        </div>
+      )}
     </div>
   );
 };
