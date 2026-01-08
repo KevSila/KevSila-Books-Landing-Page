@@ -1,6 +1,7 @@
 import React from 'react';
 import { BOOKS } from '../data';
 import { ShoppingBag, Clock } from 'lucide-react';
+import DeepDiveAudio from './DeepDiveAudio';
 
 const BookSection: React.FC = () => {
   return (
@@ -92,6 +93,13 @@ const BookSection: React.FC = () => {
                 </div>
               </div>
 
+              {/* Audio Preview Section */}
+              {book.audioPreview && (
+                <DeepDiveAudio 
+                  audio={book.audioPreview} 
+                  coverImage={book.coverImage} 
+                />
+              )}
             </div>
           </div>
         ))}

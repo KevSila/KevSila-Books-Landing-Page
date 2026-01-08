@@ -100,7 +100,14 @@ export const BOOKS: Book[] = [
             { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G7D51J28" }
         ]
       }
-    ]
+    ],
+    audioPreview: {
+      heading: "Listen to the Deep Dive",
+      description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
+      title: "Reclaiming Presence in the Digital Age",
+      subtitle: "14-Minute Executive Summary",
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4"
+    }
   }
 ];
 

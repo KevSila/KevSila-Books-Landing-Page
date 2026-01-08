@@ -10,6 +10,14 @@ export interface BookFormat {
   links: BookLink[];
 }
 
+export interface AudioPreview {
+  title: string;
+  subtitle: string;
+  sourceUrl: string;
+  heading: string;
+  description: string;
+}
+
 export interface Book {
   id: string;
   title: string;
@@ -20,6 +28,7 @@ export interface Book {
   themeColor: string;
   tags: string[];
   formats: BookFormat[];
+  audioPreview?: AudioPreview;
 }
 
 export interface Author {
