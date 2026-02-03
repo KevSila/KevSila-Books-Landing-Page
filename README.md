@@ -63,5 +63,5 @@ To update the books or content, simply edit the data.ts file. The UI will automa
 ## 👨‍💻 Developer
 Kevin Sila Front-End Developer & Data Enthusiast [LinkedIn Profile] | [Portfolio]
 
-### 💡 Suggestion for this Repo:
-If you have a live demo (like on Vercel or Netlify), you should definitely put the link at the very top of the README! Recruiters love clicking a link and seeing the website instantly without having to download the code.
+### 💡 Take a look at the project hosted on Vercel:
+Link to the Website: https://kevsilabooks.netlify.app
