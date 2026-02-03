@@ -1,6 +1,3 @@
-This looks like a sleek, modern Book Landing Page built with React, TypeScript, and Tailwind CSS. It even incorporates AI capabilities (via Gemini) to enhance the user experience.
-
-Here is a high-quality README.md to make this front-end project shine.
 
 # 📚 KevSila Books: Premium Author & Book Landing Page
 A modern, high-conversion landing page designed for authors and digital book sales. This project showcases a clean UI, responsive design, and AI-integrated features to provide readers with an immersive experience.
