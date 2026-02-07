@@ -1,67 +1,20 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-# 📚 KevSila Books: Premium Author & Book Landing Page
-A modern, high-conversion landing page designed for authors and digital book sales. This project showcases a clean UI, responsive design, and AI-integrated features to provide readers with an immersive experience.
+# Run and deploy your AI Studio app
 
-## ✨ Key Features
-🎨 Modern UI/UX: Built with a focus on typography and visual hierarchy to drive book sales and engagement.
+This contains everything you need to run your app locally.
 
-📱 Fully Responsive: Optimized for all devices, from mobile phones to high-resolution desktops.
+View your app in AI Studio: https://ai.studio/apps/drive/1rEgqC6Le5SlN5d_DmvexAohZGSHTeqfX
 
-🤖 AI-Powered Insights: Integrated with Google Gemini AI to provide smart summaries or personalized book recommendations.
+## Run Locally
 
-⚡ High Performance: Powered by Vite for lightning-fast load times and a smooth development experience.
+**Prerequisites:**  Node.js
 
-🛠️ Component-Based Architecture: Scalable and reusable UI components built with React.
 
-## 🛠️ Tech Stack
-Core: React 18
-
-Styling: Tailwind CSS (Utility-first CSS)
-
-Language: TypeScript
-
-AI Engine: Google Gemini API
-
-Build Tool: Vite
-
-## 📂 Folder Structure
-src/components: Reusable UI elements (Hero section, Book Cards, Testimonials).
-
-src/data.ts: Centralized management for book details and content.
-
-src/App.tsx: The main layout and page structure.
-
-public/images: High-quality assets and book cover renders.
-
-## 🚀 Quick Start
-Follow these steps to get the landing page running on your local machine:
-
-Clone the project:
-
-Bash
-git clone https://github.com/KevSila/KevSila-Books-Landing-Page.git
-cd KevSila-Books-Landing-Page
-Install dependencies:
-
-Bash
-npm install
-Set up Environment Variables:
-
-Create a .env.local file in the root.
-
-Add your Gemini API key:
-
-Code snippet
-GEMINI_API_KEY=your_key_here
-Run the development server:
-
-Bash
-npm run dev
-## 📈 Customization
-To update the books or content, simply edit the data.ts file. The UI will automatically update to reflect the new data, making it easy to use this as a template for different authors.
-
-## 👨‍💻 Developer
-Kevin Sila Front-End Developer & Data Enthusiast [LinkedIn Profile] | [Portfolio]
-
-### 💡 Take a look at the project hosted on Vercel:
-Link to the Website: https://kevsilabooks.netlify.app
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
