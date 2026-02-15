@@ -16,7 +16,7 @@ export const BOOKS: Book[] = [
     id: "firelit-wisdom",
     title: "The Firelit Mind",
     subtitle: "13 Timeless Principles for Modern Living",
-    description: "Discover 1 Timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
+    description: "Discover 13 Timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
     longDescription: [
       "We are drowning in information but starving for the wisdom that truly lasts. You don't need a new trend; you need a bedrock foundation for living.",
       "The Firelit Mind is a powerful guide that uses engaging, creative storytelling from the Bible and pairs these ancient lessons with practical insights for your daily life, modern challenges, and professional ventures.",
