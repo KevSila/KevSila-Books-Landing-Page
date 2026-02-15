@@ -28,7 +28,7 @@ const About: React.FC = () => {
             <p className="font-display text-lg md:text-2xl text-stone-800 italic">
               "We connect more, yet relate less. Solitude isn't a problem to fix, but a space to remember."
             </p>
-            <p className="mt-4 text-sm font-bold text-stone-400 uppercase tracking-widest">— From Solitude In The Digital Age</p>
+            <p className="mt-4 text-sm font-bold text-stone-400 uppercase tracking-widest">— From Attention By Design</p>
           </div>
         </div>
       </div>

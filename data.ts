@@ -6,7 +6,7 @@ export const AUTHOR: Author = {
   image: "/images/author.jpg", 
   bio: [
     "Kevin Sila is a Kenyan author and cultural critic known for his unique approach: merging a technical background in mathematics and computer science with deep philosophical and psychological insight.",
-    "His work serves as a Wisdom Bridge, exploring the hidden costs of the digital age and offering practical blueprints for personal resilience. Through books like Firelit Wisdom and Solitude in the Digital Age, he guides readers to build enduring character, reclaim focus, and cultivate a life of purpose.",
+    "His work serves as a Wisdom Bridge, exploring the hidden costs of the digital age and offering practical blueprints for personal resilience. Through books like The Firelit Mind and Attention By Design, he guides readers to build enduring character, reclaim focus, and cultivate a life of purpose.",
     "His writing is grounded in personal rediscovery and cultural critique, delivered without judgment, and focused on creating paths to presence in an 'always-on' world. When not writing, he finds renewal in unshared walks and meaningful conversations."
   ]
 };
@@ -14,12 +14,12 @@ export const AUTHOR: Author = {
 export const BOOKS: Book[] = [
   {
     id: "firelit-wisdom",
-    title: "Firelit Wisdom",
-    subtitle: "Ancient Truths For Modern Living",
-    description: "Discover 13 timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
+    title: "The Firelit Mind",
+    subtitle: "13 Timeless Principles for Modern Living",
+    description: "Discover 1 Timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
     longDescription: [
       "We are drowning in information but starving for the wisdom that truly lasts. You don't need a new trend; you need a bedrock foundation for living.",
-      "Firelit Wisdom is a powerful guide that uses engaging, creative storytelling from the Bible and pairs these ancient lessons with practical insights for your daily life, modern challenges, and professional ventures.",
+      "The Firelit Mind is a powerful guide that uses engaging, creative storytelling from the Bible and pairs these ancient lessons with practical insights for your daily life, modern challenges, and professional ventures.",
       "This book provides you with the fundamental, timeless principles (the \"ancient anchors\") for character and conduct. It shows you that the core challenges you face—in leadership, decision-making, and personal growth—have been navigated for millennia. By mastering these essentials, you will lay the groundwork for a truly fulfilled life.",
       "Inside, you will master 13 timeless principles covering:",
       "• Character and Self-Improvement: How to become a better person by integrating timeless lessons into your life and realizing that all your current challenges have been faced before.",
@@ -37,7 +37,7 @@ export const BOOKS: Book[] = [
         available: true,
         links: [
           { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
-          { label: "Buy on Selar", url: "https://selar.com/6z86mz4264" },
+          { label: "Buy on Selar", url: "https://selar.com/thefirelitmind" },
           { label: "Buy on Nuria", url: "https://nuriakenya.com/product/firelit-wisdom-ancient-truths-for-modern-living/" }
         ]
       },
@@ -61,19 +61,19 @@ export const BOOKS: Book[] = [
     audioPreview: {
       heading: "Listen to the Deep Dive",
       description: "In a world of endless data, we often lose the very wisdom our ancestors held. Listen to this exploration of how to quiet the digital noise and return to the firelight of true understanding.",
-      title: "Firelit Wisdom: Starving for Wisdom in an Age of Information",
-      subtitle: "14-Minute Deep Dive into Ancestral Truths",
+      title: "The Firelit Mind: Starving for Wisdom in an Age of Information",
+      subtitle: "14-Minute Deep Dive into 13 Timeless Principles",
       sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767872555/Information_Overload_Starving_for_Wisdom_wustrp.mp4",
       theme: 'firelit'
     }
   },
   {
     id: "solitude-digital",
-    title: "Solitude In The Digital Age",
-    subtitle: "Reclaiming Depth and Focus in a Digitally Noisy World",
+    title: "Attention By Design",
+    subtitle: "Mastering the Digital Patterns That Shape Your Mind",
     description: "A cultural and psychological exploration of how constant connectivity reshapes our minds and relationships.",
     longDescription: [
-      "We are constantly connected, yet always somehow distracted. The digital age has reshaped our interactions, making deep presence difficult and turning true connection into superficial performance. Solitude in the Digital Age is your essential roadmap to understanding the invisible costs of the modern world and reclaiming your focus, depth, and inner peace.",
+      "We are constantly connected, yet always somehow distracted. The digital age has reshaped our interactions, making deep presence difficult and turning true connection into superficial performance. Attention By Design is your essential roadmap to understanding the invisible costs of the modern world and reclaiming your focus, depth, and inner peace.",
       "This book is not just a digital critique; it’s a detailed guide that clearly explains:",
       "• The Unseen Psychological Costs: How the rise of performance culture on social media and the \"always-on\" economy are fundamentally changing how you experience places, people, and life itself—often without you realizing the emotional and biological toll.",
       "• The Science of Fragmentation: Understanding the biological cost of dopamine addiction, the anxiety of endless information, and how this leads to mental fog and burnout.",
@@ -112,7 +112,7 @@ export const BOOKS: Book[] = [
     audioPreview: {
       heading: "Listen to the Deep Dive",
       description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
-      title: "Reclaiming Presence in the Digital Age",
+      title: "Mastering the Digital Patterns That Shape Your Mind",
       subtitle: "14-Minute Executive Summary",
       sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
       theme: 'dark'
@@ -144,14 +144,14 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS: FAQItem[] = [
   {
     question: "Who are these books for?",
-    answer: "These books are for anyone feeling the pressures of the modern world—from leaders seeking enduring character (Firelit Wisdom) to professionals struggling with digital distraction and focus (Solitude in the Digital Age)."
+    answer: "These books are for anyone feeling the pressures of the modern world—from leaders seeking enduring character (The Firelit Mind) to professionals struggling with digital distraction and focus (Attention By Design)."
   },
   {
-    question: "Is Firelit Wisdom only for religious readers?",
-    answer: "While Firelit Wisdom draws on biblical narratives for its foundation, its core themes of character, decision-making, and wisdom are universal. It is written to be accessible and practical for readers of all backgrounds."
+    question: "Is The Firelit Mind only for religious readers?",
+    answer: "While The Firelit Mind draws on biblical narratives for its foundation, its core themes of character, decision-making, and wisdom are universal. It is written to be accessible and practical for readers of all backgrounds."
   },
   {
-    question: "Does Solitude in the Digital Age recommend abandoning technology?",
+    question: "Does Attention By Design recommend abandoning technology?",
     answer: "No. The book advocates for Digital Minimalism Without Extremes. It offers a roadmap for moderation and setting intentional boundaries to reclaim your focus, not a total withdrawal from the modern world."
   },
   {
