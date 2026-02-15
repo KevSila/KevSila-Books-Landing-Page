@@ -38,7 +38,7 @@ export const BOOKS: Book[] = [
         links: [
           { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
           { label: "Buy on Selar", url: "https://selar.com/thefirelitmind" },
-          { label: "Buy on Nuria", url: "https://nuriakenya.com/product/firelit-wisdom-ancient-truths-for-modern-living/" }
+          { label: "Buy on Nuria", url: "https://nuriakenya.com/product/thefirelitmind/" }
         ]
       },
       {
