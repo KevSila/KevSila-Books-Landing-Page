@@ -59,18 +59,18 @@ export const BOOKS: Book[] = [
       }
     ],
     audioPreview: {
-      heading: "Listen to the Deep Dive",
-      description: "In a world of endless data, we often lose the very wisdom our ancestors held. Listen to this exploration of how to quiet the digital noise and return to the firelight of true understanding.",
-      title: "The Firelit Mind: Starving for Wisdom in an Age of Information",
-      subtitle: "14-Minute Deep Dive into 13 Timeless Principles",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767872555/Information_Overload_Starving_for_Wisdom_wustrp.mp4",
+      heading: "Get a glimpse of what to expect",
+      description: "Discover the timeless principles that will guide your character and legacy. Listen to this brief preview of the wisdom contained within the book.",
+      title: "The Firelit Mind: Preview",
+      subtitle: "Get a glimpse of what to expect",
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771170168/Firelit%20Mind.mp4",
       theme: 'firelit'
     }
   },
   {
     id: "solitude-digital",
     title: "Attention By Design",
-    subtitle: "Mastering the Digital Patterns That Shape Your Mind",
+    subtitle: "Mastering the digital patterns that shape your mind",
     description: "A cultural and psychological exploration of how constant connectivity reshapes our minds and relationships.",
     longDescription: [
       "We are constantly connected, yet always somehow distracted. The digital age has reshaped our interactions, making deep presence difficult and turning true connection into superficial performance. Attention By Design is your essential roadmap to understanding the invisible costs of the modern world and reclaiming your focus, depth, and inner peace.",
