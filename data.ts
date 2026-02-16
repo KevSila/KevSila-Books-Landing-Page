@@ -55,7 +55,7 @@ export const BOOKS: Book[] = [
         price: "$24.99",
         available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G4KBQMVF?ref_=pe_93986420_774957520" }
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GNN2K81H" }
         ]
       }
     ],
