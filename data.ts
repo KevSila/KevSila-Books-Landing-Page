@@ -37,7 +37,7 @@ export const BOOKS: Book[] = [
         available: true,
         links: [
           { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
-          { label: "Buy on Selar", url: "https://selar.com/thefirelitmind" },
+          { label: "Buy on Selar", url: "https://selar.com/attentionbydesign" },
           { label: "Buy on Gumroad", url: "https://kevinsila.gumroad.com/l/thefirelitmind" },
           { label: "Buy on Nuria", url: "https://nuriakenya.com/product/thefirelitmind/" }
         ]
@@ -47,7 +47,7 @@ export const BOOKS: Book[] = [
         price: "$14.99",
         available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/9914779050?ref_=pe_93986420_774957520" }
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GNPVN1SH" }
         ]
       },
       {
@@ -64,7 +64,7 @@ export const BOOKS: Book[] = [
       description: "Discover the timeless principles that will guide your character and legacy. Listen to this brief preview of the wisdom contained within the book.",
       title: "The Firelit Mind: Preview",
       subtitle: "Get a glimpse of what to expect",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771170168/Firelit%20Mind.mp4",
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771503670/Firelit%20Mind.mp4",
       theme: 'firelit'
     }
   },
@@ -90,7 +90,8 @@ export const BOOKS: Book[] = [
         price: "$5.99",
         available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G71Y1G2D" }
+          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G71Y1G2D" },
+          { label: "Buy on Gumroad", url: "https://kevinsila.gumroad.com/l/attentionbydesign" }
         ]
       },
       {
@@ -98,7 +99,7 @@ export const BOOKS: Book[] = [
         price: "$14.99",
         available: true,
         links: [
-            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G7CPXXRJ" }
+            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GP6YFD2V" }
         ]
       },
       {
@@ -106,7 +107,7 @@ export const BOOKS: Book[] = [
         price: "$24.99",
         available: true,
         links: [
-            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G7D51J28" }
+            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GP6698KK" }
         ]
       }
     ],
@@ -114,8 +115,8 @@ export const BOOKS: Book[] = [
       heading: "Listen to the Deep Dive",
       description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
       title: "Mastering the Digital Patterns That Shape Your Mind",
-      subtitle: "14-Minute Executive Summary",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/e_volume:auto,q_auto,f_auto/v1767817013/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
+      subtitle: "get a glimpse of what to expect",
+      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771500784/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
       theme: 'dark'
     }
   }
