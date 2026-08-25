@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowDown, Compass, Focus } from 'lucide-react';
 
 const ReadingPath: React.FC = () => (
-  <section id="choose-your-book" className="relative overflow-hidden bg-stone-950 px-5 py-24 text-white md:px-8 md:py-32">
+  <section id="choose-your-book" className="relative overflow-hidden bg-stone-950 px-5 py-16 text-white sm:py-20 md:px-8 md:py-32">
     <div className="ember-orb" aria-hidden="true" />
     <div className="mx-auto max-w-6xl">
       <div className="mx-auto max-w-3xl text-center">
@@ -11,7 +11,7 @@ const ReadingPath: React.FC = () => (
         <p className="mx-auto mt-6 max-w-2xl font-serif text-lg leading-8 text-stone-300">The books meet two different needs, but share one conviction: a meaningful life is built deliberately.</p>
       </div>
 
-      <div className="mx-auto mt-16 grid max-w-4xl gap-5 md:grid-cols-[1fr_auto_1fr] md:items-stretch">
+      <div className="mx-auto mt-10 grid max-w-4xl gap-5 sm:mt-12 md:mt-16 md:grid-cols-[1fr_auto_1fr] md:items-stretch">
         <a href="/attention-by-design/" className="path-card group">
           <span className="path-number">01</span>
           <Focus className="mt-8 h-8 w-8 text-[#d85e35]" aria-hidden="true" />

@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Headphones } from 'lucide-react';
 
 const FinalCTA: React.FC = () => (
-  <section className="bg-white px-5 py-20 md:px-8 md:py-24">
+  <section className="bg-white px-5 py-14 sm:py-16 md:px-8 md:py-24">
     <div className="cta-panel mx-auto max-w-5xl text-center">
       <p className="eyebrow eyebrow-light">Your next chapter can begin here</p>
       <h2 className="mx-auto mt-4 max-w-3xl font-display text-4xl font-bold tracking-tight text-white md:text-5xl">What do you need most right now—clarity or wisdom?</h2>

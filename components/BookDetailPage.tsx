@@ -33,7 +33,7 @@ const BookDetailPage: React.FC<{ book: Book }> = ({ book }) => {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 md:px-8 md:py-28">
+      <section className="bg-white px-5 py-16 sm:py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[1.05fr_.95fr]">
           <div>
             <p className="eyebrow">Inside the book</p>
@@ -57,7 +57,7 @@ const BookDetailPage: React.FC<{ book: Book }> = ({ book }) => {
         </div>
       </section>
 
-      <section id="buy" className="bg-[#f7f4ee] px-5 py-24 md:px-8 md:py-28">
+      <section id="buy" className="bg-[#f7f4ee] px-5 py-16 sm:py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
             <p className="eyebrow">Available worldwide</p>
@@ -69,14 +69,14 @@ const BookDetailPage: React.FC<{ book: Book }> = ({ book }) => {
       </section>
 
       {book.audioPreview && (
-        <section id="listen" className="bg-white px-5 py-24 md:px-8 md:py-28">
+        <section id="listen" className="bg-white px-5 py-16 sm:py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-3xl">
             <DeepDiveAudio audio={book.audioPreview} coverImage={book.coverImage} coverAlt={book.coverAlt} bookId={book.id} />
           </div>
         </section>
       )}
 
-      <section className="bg-stone-950 px-5 py-20 text-white md:px-8">
+      <section className="bg-stone-950 px-5 py-14 text-white sm:py-16 md:px-8 md:py-20">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 text-center md:flex-row md:text-left">
           <div>
             <p className="eyebrow eyebrow-light">Continue the journey</p>

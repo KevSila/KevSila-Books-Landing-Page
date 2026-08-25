@@ -4,9 +4,9 @@ import { BOOKS } from '../data';
 import { trackEvent } from '../analytics';
 
 const BookSection: React.FC = () => (
-  <section id="books" className="bg-[#f7f4ee] px-5 py-24 md:px-8 md:py-32">
+  <section id="books" className="bg-[#f7f4ee] px-5 py-16 sm:py-20 md:px-8 md:py-32">
     <div className="mx-auto max-w-6xl">
-      <div className="mb-14 max-w-3xl">
+      <div className="mb-10 max-w-3xl sm:mb-12 md:mb-14">
         <p className="eyebrow">The collection</p>
         <h2 className="section-title mt-4">Choose the book that meets you where you are.</h2>
         <p className="section-intro mt-5">Each title stands on its own. Together, they form a journey from attention to wisdom—from recovering your inner space to building a life of character.</p>
