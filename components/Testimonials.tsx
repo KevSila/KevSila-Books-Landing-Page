@@ -9,9 +9,9 @@ const Testimonials: React.FC = () => (
         <p className="eyebrow eyebrow-light">Reader reflections</p>
         <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">What readers are saying</h2>
       </div>
-      <div className="grid gap-6 md:grid-cols-3">
-        {TESTIMONIALS.map((testimonial) => (
-          <figure key={testimonial.id} className="testimonial-card">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {TESTIMONIALS.map((testimonial, index) => (
+          <figure key={testimonial.id} className={`testimonial-card ${index === TESTIMONIALS.length - 1 ? 'md:col-span-2 lg:col-span-1' : ''}`}>
             <Quote className="h-6 w-6 text-[#ef6a3a]" aria-hidden="true" />
             {testimonial.book && <p className="mt-5 font-sans text-[10px] font-bold uppercase tracking-[.18em] text-[#ff9a70]">On {testimonial.book}</p>}
             <blockquote className="mt-4 font-serif text-lg italic leading-8 text-stone-200">“{testimonial.quote}”</blockquote>

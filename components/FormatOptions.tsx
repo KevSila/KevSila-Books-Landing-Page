@@ -11,14 +11,14 @@ const FormatOptions: React.FC<{ book: Book }> = ({ book }) => (
           <p className="font-display font-bold text-stone-950">{format.type}</p>
           <p className="mt-1 font-sans text-xs text-stone-500">From {format.price}</p>
         </div>
-        <div className="flex flex-1 flex-wrap justify-start gap-2 sm:justify-end">
+        <div className="grid w-full flex-1 grid-cols-1 gap-2 min-[420px]:grid-cols-2 sm:flex sm:w-auto sm:flex-wrap sm:justify-end">
           {format.links.map((link) => (
             <a
               key={`${format.type}-${link.label}`}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="retailer-link"
+              className="retailer-link justify-center text-center sm:justify-start sm:text-left"
               onClick={() => trackEvent('retailer_click', { book: book.id, format: format.type, retailer: link.retailer, market: link.market })}
               aria-label={`${link.label}, opens in a new tab`}
             >

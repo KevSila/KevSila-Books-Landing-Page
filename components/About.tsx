@@ -15,7 +15,7 @@ const About: React.FC = () => {
           <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
         </div>
 
-        <div className="space-y-6 font-serif text-lg leading-8 text-stone-700 md:text-xl">
+        <div className="space-y-6 text-left font-serif text-base leading-8 text-stone-700 sm:text-center sm:text-lg md:text-xl">
           {AUTHOR.bio.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
