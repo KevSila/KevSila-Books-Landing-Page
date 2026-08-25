@@ -1,163 +1,125 @@
-import { Book, Author, Testimonial, FAQItem } from './types';
+import { Author, Book, FAQItem, Testimonial } from './types';
 
 export const AUTHOR: Author = {
-  name: "Kevin Yumbya Sila",
-  tagline: "Author",
-  image: "/images/author.jpg", 
+  name: 'Kevin Yumbya Sila',
+  tagline: 'Kenyan author and cultural critic',
+  image: '/images/author.webp',
   bio: [
-    "Kevin Sila is a Kenyan author and cultural critic known for his unique approach: merging a technical background in mathematics and computer science with deep philosophical and psychological insight.",
-    "His work serves as a Wisdom Bridge, exploring the hidden costs of the digital age and offering practical blueprints for personal resilience. Through books like The Firelit Mind and Attention By Design, he guides readers to build enduring character, reclaim focus, and cultivate a life of purpose.",
-    "His writing is grounded in personal rediscovery and cultural critique, delivered without judgment, and focused on creating paths to presence in an 'always-on' world. When not writing, he finds renewal in unshared walks and meaningful conversations."
+    'Kevin Sila is a Kenyan author and cultural critic who brings together a background in mathematics and computer science with philosophical, psychological and spiritual reflection.',
+    'His books explore two questions at the heart of modern life: how to reclaim our attention from a world designed to fragment it, and how to use that clarity to build wisdom, character and a meaningful legacy.',
+    'His writing is practical without being hurried, reflective without losing sight of daily life, and written for readers seeking depth in a noisy world.'
   ]
 };
 
 export const BOOKS: Book[] = [
   {
-    id: "firelit-wisdom",
-    title: "The Firelit Mind",
-    subtitle: "13 Timeless Principles for Modern Living",
-    description: "Discover 13 Timeless principles to discern truth, lead with humility, and build a legacy that outlives you.",
+    id: 'attention-by-design',
+    title: 'Attention By Design',
+    subtitle: 'Mastering the Digital Patterns That Shape Your Mind',
+    eyebrow: 'Start with clarity',
+    shortPromise: 'Reclaim your mind before the digital world designs it for you.',
+    description: 'A thoughtful, practical guide to understanding digital distraction and rebuilding focus, presence and intentional connection.',
     longDescription: [
-      "We are drowning in information but starving for the wisdom that truly lasts. You don't need a new trend; you need a bedrock foundation for living.",
-      "The Firelit Mind is a powerful guide that uses engaging, creative storytelling from the Bible and pairs these ancient lessons with practical insights for your daily life, modern challenges, and professional ventures.",
-      "This book provides you with the fundamental, timeless principles (the \"ancient anchors\") for character and conduct. It shows you that the core challenges you face—in leadership, decision-making, and personal growth—have been navigated for millennia. By mastering these essentials, you will lay the groundwork for a truly fulfilled life.",
-      "Inside, you will master 13 timeless principles covering:",
-      "• Character and Self-Improvement: How to become a better person by integrating timeless lessons into your life and realizing that all your current challenges have been faced before.",
-      "• Leadership and Conflict: The fundamentals of handling difficult situations and leading others with humility and integrity.",
-      "• Legacy Building: Practical steps for achieving a fulfilled life and passing on essential wisdom to the next generation.",
-      "This book is a blueprint for understanding life's most essential fundamentals and building a lasting, intentional character."
+      'We are constantly connected, yet often feel scattered, overstimulated and strangely absent from our own lives. Attention By Design reveals how digital environments shape focus, relationships, rest and the way we experience the world.',
+      'Rather than demanding that you abandon technology, the book offers a balanced path: understand the forces competing for your attention, establish realistic boundaries and recover the inner space required for meaningful work and relationships.',
+      'Every chapter closes with reflection prompts that help you examine your habits and translate insight into deliberate change.'
     ],
-    coverImage: "/images/firelit-cover.jpg", 
-    themeColor: "bg-orange-50",
-    tags: ["TimelessWisdom", "CharacterDevelopment", "ChristianLeadership", "LegacyBuilding"],
+    outcomes: [
+      'Understand dopamine loops, fragmentation and the always-on economy',
+      'Build practical digital boundaries without rejecting technology',
+      'Recover focus, solitude, presence and deeper relationships'
+    ],
+    idealFor: 'Professionals, students, creatives, parents and reflective readers who feel mentally scattered or digitally overwhelmed.',
+    coverImage: '/images/attention-by-design.webp',
+    coverAlt: 'Cover of Attention By Design by Kevin Sila',
+    theme: 'attention',
+    tags: ['Digital minimalism', 'Mental clarity', 'Intentional living'],
     formats: [
       {
-        type: "Ebook",
-        price: "$5.99",
-        available: true,
+        type: 'Ebook', price: '$5.99', available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G49HNCZR" },
-          { label: "Buy on Selar", url: "https://selar.com/attentionbydesign" },
-          { label: "Buy on Gumroad", url: "https://kevinsila.gumroad.com/l/thefirelitmind" },
-          { label: "Buy on Nuria", url: "https://nuriakenya.com/product/thefirelitmind/" }
+          { label: 'Amazon Kindle', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0G71Y1G2D' },
+          { label: 'Gumroad ebook', retailer: 'Gumroad', market: 'Direct', url: 'https://kevinsila.gumroad.com/l/attentionbydesign' }
         ]
       },
-      {
-        type: "Paperback",
-        price: "$14.99",
-        available: true,
-        links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GNPVN1SH" }
-        ]
-      },
-      {
-        type: "Hardcover",
-        price: "$24.99",
-        available: true,
-        links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GNN2K81H" }
-        ]
-      }
+      { type: 'Paperback', price: '$14.99', available: true, links: [
+        { label: 'Amazon paperback', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0GP6YFD2V' }
+      ] },
+      { type: 'Hardcover', price: '$24.99', available: true, links: [
+        { label: 'Amazon hardcover', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0GP6698KK' }
+      ] }
     ],
     audioPreview: {
-      heading: "Get a glimpse of what to expect",
-      description: "Discover the timeless principles that will guide your character and legacy. Listen to this brief preview of the wisdom contained within the book.",
-      title: "The Firelit Mind: Preview",
-      subtitle: "Get a glimpse of what to expect",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771503670/Firelit%20Mind.mp4",
-      theme: 'firelit'
+      heading: 'Listen to the deep dive',
+      description: 'Hear how the dopamine trap works—and how to begin reclaiming your focus in an age of constant noise.',
+      title: 'Mastering the Digital Patterns That Shape Your Mind',
+      subtitle: 'A five-minute introduction',
+      sourceUrl: 'https://res.cloudinary.com/dn6libhk1/video/upload/v1771500784/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4',
+      theme: 'attention'
     }
   },
   {
-    id: "solitude-digital",
-    title: "Attention By Design",
-    subtitle: "Mastering the digital patterns that shape your mind",
-    description: "A cultural and psychological exploration of how constant connectivity reshapes our minds and relationships.",
+    id: 'the-firelit-mind',
+    title: 'The Firelit Mind',
+    subtitle: '13 Timeless Principles for a Life Well-Lived',
+    eyebrow: 'Continue with wisdom',
+    shortPromise: 'Turn clear attention into wise choices, durable character and a legacy worth passing on.',
+    description: 'Timeless biblical wisdom, contemporary psychology and practical frameworks for character, leadership and a life of purpose.',
     longDescription: [
-      "We are constantly connected, yet always somehow distracted. The digital age has reshaped our interactions, making deep presence difficult and turning true connection into superficial performance. Attention By Design is your essential roadmap to understanding the invisible costs of the modern world and reclaiming your focus, depth, and inner peace.",
-      "This book is not just a digital critique; it’s a detailed guide that clearly explains:",
-      "• The Unseen Psychological Costs: How the rise of performance culture on social media and the \"always-on\" economy are fundamentally changing how you experience places, people, and life itself—often without you realizing the emotional and biological toll.",
-      "• The Science of Fragmentation: Understanding the biological cost of dopamine addiction, the anxiety of endless information, and how this leads to mental fog and burnout.",
-      "• The Path to Identifying and Mitigating these modern-day changes: Practical, non-extreme strategies for implementing Digital Minimalism and intentional slowness to protect your attention and energy.",
-      "• For Lasting Change: To ensure you don't just read the book but apply it, every chapter ends with Reflection Prompts that help you analyze your current habits and immediately improve your life chapter-by-chapter."
+      'We are drowning in information but starving for wisdom that lasts. The Firelit Mind returns to tested principles that have helped people navigate power, suffering, relationships, conflict, responsibility and renewal across generations.',
+      'Through biblical narratives, contemporary psychology and practical application, the book examines discernment, humility, stewardship, resilience, speech, covenant, reconciliation, integrity, leadership, rest, sacred attention and wisdom legacy.',
+      'This is not wisdom preserved behind glass. It is a field guide for making better choices, becoming a person of substance and passing light to the people who come after you.'
     ],
-    coverImage: "/images/book-solitude.jpg",
-    themeColor: "bg-blue-50",
-    tags: ["DigitalMinimalism", "MentalClarity", "IntentionalLiving", "Psychology"],
+    outcomes: [
+      'Make wiser decisions in a world crowded with opinions',
+      'Lead, speak and handle conflict with humility and integrity',
+      'Build resilient character and a wisdom legacy that outlives you'
+    ],
+    idealFor: 'Leaders, mentors, parents, professionals and contemplative readers seeking biblical wisdom with practical modern application.',
+    coverImage: '/images/the-firelit-mind.webp',
+    coverAlt: 'Cover of The Firelit Mind by Kevin Sila',
+    theme: 'firelit',
+    tags: ['Timeless wisdom', 'Character', 'Leadership and legacy'],
     formats: [
       {
-        type: "Ebook",
-        price: "$5.99",
-        available: true,
+        type: 'Ebook', price: '$5.99', available: true,
         links: [
-          { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0G71Y1G2D" },
-          { label: "Buy on Gumroad", url: "https://kevinsila.gumroad.com/l/attentionbydesign" }
+          { label: 'Amazon Kindle', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0G49HNCZR' },
+          { label: 'Kevin Sila on Selar', retailer: 'Selar', market: 'Africa and worldwide', url: 'https://selar.com/m/kevinsila' },
+          { label: 'Gumroad ebook', retailer: 'Gumroad', market: 'Direct', url: 'https://kevinsila.gumroad.com/l/thefirelitmind' },
+          { label: 'Nuria Kenya', retailer: 'Nuria', market: 'Kenya', url: 'https://nuriakenya.com/product/thefirelitmind/' }
         ]
       },
-      {
-        type: "Paperback",
-        price: "$14.99",
-        available: true,
-        links: [
-            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GP6YFD2V" }
-        ]
-      },
-      {
-        type: "Hardcover",
-        price: "$24.99",
-        available: true,
-        links: [
-            { label: "Buy on Amazon", url: "https://www.amazon.com/dp/B0GP6698KK" }
-        ]
-      }
+      { type: 'Paperback', price: '$14.99', available: true, links: [
+        { label: 'Amazon paperback', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0GNPVN1SH' }
+      ] },
+      { type: 'Hardcover', price: '$24.99', available: true, links: [
+        { label: 'Amazon hardcover', retailer: 'Amazon', market: 'Worldwide', url: 'https://www.amazon.com/dp/B0GNN2K81H' }
+      ] }
     ],
     audioPreview: {
-      heading: "Listen to the Deep Dive",
-      description: "Discover the hidden mechanics of the dopamine trap and how to reclaim your focus in an age of constant noise.",
-      title: "Mastering the Digital Patterns That Shape Your Mind",
-      subtitle: "get a glimpse of what to expect",
-      sourceUrl: "https://res.cloudinary.com/dn6libhk1/video/upload/v1771500784/Reclaiming_Presence_in_the_Digital_Age_js7nl1.mp4",
-      theme: 'dark'
+      heading: 'Listen to the preview',
+      description: 'Discover the timeless principles that guide character, discernment and legacy.',
+      title: 'The Firelit Mind: Preview',
+      subtitle: 'A four-minute introduction',
+      sourceUrl: 'https://res.cloudinary.com/dn6libhk1/video/upload/v1771503670/Firelit%20Mind.mp4',
+      theme: 'firelit'
     }
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: "t1",
-    quote: "An essential book for leaders. It brilliantly connects biblical wisdom to the core challenges of modern leadership and character development. It’s an anchor in a chaotic age.",
-    author: "Dr. M. Kinyanjui",
-    role: "Leadership Consultant"
-  },
-  {
-    id: "t2",
-    quote: "This is the handbook for surviving the 'always-on' life. It gave me permission to slow down and gave me practical steps to reclaim my focus. A necessary cultural critique.",
-    author: "Sarah W.",
-    role: "Early Reader"
-  },
-  {
-    id: "t3",
-    quote: "Kevin Sila's writing is a rare blend of poetic reflection and clear, actionable strategy. He helps you see the world with new eyes and equips you to live better.",
-    author: "P. Ochieng",
-    role: "Author & Mentor"
-  }
+  { id: 't1', quote: 'An essential book for leaders. It brilliantly connects biblical wisdom to the core challenges of modern leadership and character development. It is an anchor in a chaotic age.', author: 'Dr. M. Kinyanjui', role: 'Leadership consultant', book: 'The Firelit Mind' },
+  { id: 't2', quote: 'This is the handbook for surviving the always-on life. It gave me permission to slow down and practical steps to reclaim my focus.', author: 'Sarah W.', role: 'Early reader', book: 'Attention By Design' },
+  { id: 't3', quote: "Kevin Sila's writing is a rare blend of poetic reflection and clear, actionable strategy. He helps you see the world with new eyes and equips you to live better.", author: 'P. Ochieng', role: 'Author and mentor' }
 ];
 
 export const FAQS: FAQItem[] = [
-  {
-    question: "Who are these books for?",
-    answer: "These books are for anyone feeling the pressures of the modern world—from leaders seeking enduring character (The Firelit Mind) to professionals struggling with digital distraction and focus (Attention By Design)."
-  },
-  {
-    question: "Is The Firelit Mind only for religious readers?",
-    answer: "While The Firelit Mind draws on biblical narratives for its foundation, its core themes of character, decision-making, and wisdom are universal. It is written to be accessible and practical for readers of all backgrounds."
-  },
-  {
-    question: "Does Attention By Design recommend abandoning technology?",
-    answer: "No. The book advocates for Digital Minimalism Without Extremes. It offers a roadmap for moderation and setting intentional boundaries to reclaim your focus, not a total withdrawal from the modern world."
-  },
-  {
-    question: "What is the author's background?",
-    answer: "Kevin Sila blends a technical background in computer science with deep psychological and spiritual insight, offering a unique perspective on modern life's challenges."
-  }
+  { question: 'Which book should I read first?', answer: 'Begin with Attention By Design if distraction, mental noise or your relationship with technology is the immediate challenge. Begin with The Firelit Mind if you are focused on decisions, character, leadership or legacy. Read together, the books move from reclaiming attention to using it wisely.' },
+  { question: 'Is The Firelit Mind only for Christian readers?', answer: 'The book is openly grounded in biblical narratives. Its lessons on discernment, humility, stewardship, conflict, integrity, leadership and rest are explained in a practical way for readers approaching from faith, curiosity or a desire for deeper wisdom.' },
+  { question: 'Does Attention By Design recommend abandoning technology?', answer: 'No. It advocates intentional technology rather than total withdrawal. The goal is to understand the forces shaping your attention and establish realistic boundaries that protect focus, presence and relationships.' },
+  { question: 'Which formats are available?', answer: 'Both books are available as ebooks, paperbacks and hardcovers. Availability and final prices can vary by retailer and country.' },
+  { question: 'Can I listen before choosing?', answer: 'Yes. Each book has a free four-to-five-minute audio introduction on this website.' }
 ];
+
+export const getBook = (id: string) => BOOKS.find((book) => book.id === id);

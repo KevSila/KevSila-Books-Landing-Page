@@ -2,7 +2,14 @@
 export default {
   content: [
     "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
+    "./attention-by-design/index.html",
+    "./the-firelit-mind/index.html",
+    "./privacy/index.html",
+    "./App.tsx",
+    "./index.tsx",
+    "./data.ts",
+    "./analytics.ts",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {

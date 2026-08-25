@@ -4,11 +4,10 @@ import { Quote } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-stone-100/50">
+    <section id="about" className="bg-white py-24 md:py-28">
       <div className="max-w-4xl mx-auto px-6 text-center space-y-12">
-        <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-amber-600">
-            {/* Using a generic silhouette if placeholder fails, but styled nicely */}
-            <img src={AUTHOR.image} alt={AUTHOR.name} className="w-full h-full object-cover" />
+        <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-[#ef6a3a]/30 shadow-xl">
+            <img src={AUTHOR.image} alt={`Portrait of ${AUTHOR.name}`} width="320" height="320" loading="lazy" className="h-full w-full object-cover" />
         </div>
         
         <div className="space-y-4">
@@ -16,7 +15,7 @@ const About: React.FC = () => {
           <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
         </div>
 
-        <div className="font-serif text-xl text-stone-700 leading-relaxed space-y-6">
+        <div className="space-y-6 font-serif text-lg leading-8 text-stone-700 md:text-xl">
           {AUTHOR.bio.map((para, i) => (
             <p key={i}>{para}</p>
           ))}

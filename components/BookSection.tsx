@@ -1,111 +1,67 @@
 import React from 'react';
+import { ArrowRight, Check, ExternalLink } from 'lucide-react';
 import { BOOKS } from '../data';
-import { ShoppingBag, Clock } from 'lucide-react';
-import DeepDiveAudio from './DeepDiveAudio';
+import { trackEvent } from '../analytics';
 
-const BookSection: React.FC = () => {
-  return (
-    <section id="books" className="py-20 md:py-32 px-6">
-      <div className="max-w-6xl mx-auto space-y-32">
-        {BOOKS.map((book, index) => (
-          <div 
-            key={book.id} 
-            className={`flex flex-col md:flex-row gap-12 items-start md:items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
-          >
-            {/* Book Cover Side */}
-            <div className="w-full md:w-1/2 flex justify-center">
-              <div className="relative w-64 md:w-80 aspect-[2/3] shadow-2xl rounded-sm overflow-hidden transform transition-transform hover:-translate-y-2 duration-500 bg-stone-100">
-                <img 
-                  src={book.coverImage} 
-                  alt={book.title} 
-                  className="w-full h-full object-cover"
-                />
-                {/* Visual Spine Effect */}
-                <div className="absolute left-0 top-0 h-full w-2 bg-black/10 bg-gradient-to-r from-white/20 to-transparent"></div>
-              </div>
-            </div>
+const BookSection: React.FC = () => (
+  <section id="books" className="bg-[#f7f4ee] px-5 py-24 md:px-8 md:py-32">
+    <div className="mx-auto max-w-6xl">
+      <div className="mb-14 max-w-3xl">
+        <p className="eyebrow">The collection</p>
+        <h2 className="section-title mt-4">Choose the book that meets you where you are.</h2>
+        <p className="section-intro mt-5">Each title stands on its own. Together, they form a journey from attention to wisdom—from recovering your inner space to building a life of character.</p>
+      </div>
 
-            {/* Content Side */}
-            <div className="w-full md:w-1/2 space-y-8">
-              <div className="space-y-2">
-                <span className="text-stone-500 text-sm font-bold tracking-widest uppercase">{book.subtitle}</span>
-                <h2 className="font-display text-4xl md:text-5xl text-stone-900">{book.title}</h2>
-              </div>
-              
-              <div className="flex flex-wrap gap-2">
-                {book.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-amber-600 text-white text-xs rounded-full">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-
-              <div className="font-serif text-lg text-stone-600 space-y-4 leading-relaxed">
-                {book.longDescription.map((para, i) => {
-                  const isBullet = para.startsWith('•');
-                  return (
-                    <p 
-                      key={i} 
-                      className={isBullet ? "pl-4 text-stone-700 font-medium" : ""}
-                    >
-                      {para}
-                    </p>
-                  );
-                })}
-              </div>
-
-              {/* Purchasing Options */}
-              <div className="pt-4 border-t border-stone-200">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-stone-400 mb-4">Select Format</h3>
-                <div className="grid gap-4">
-                  {book.formats.map((format) => (
-                    <div key={format.type} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-50 rounded-lg border border-stone-100">
-                      <div className="mb-3 sm:mb-0">
-                        <div className="flex items-center gap-2">
-                          <span className="font-display font-semibold text-stone-900">{format.type}</span>
-                          <span className="text-stone-500 text-sm">{format.price}</span>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-2">
-                        {format.available && format.links.length > 0 ? (
-                          format.links.map((link) => (
-                            <a 
-                              key={link.label}
-                              href={link.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center gap-2 bg-amber-600 text-white text-sm px-4 py-2 rounded hover:bg-amber-700 transition-colors"
-                            >
-                              <ShoppingBag className="w-3 h-3" />
-                              <span className="whitespace-nowrap">{link.label.replace('Buy on ', '')}</span>
-                            </a>
-                          ))
-                        ) : (
-                          <div className="flex items-center gap-2 text-stone-400 text-sm italic px-2">
-                            <Clock className="w-3 h-3" />
-                            <span>Coming Soon</span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+      <div className="grid gap-8 lg:grid-cols-2">
+        {BOOKS.map((book) => {
+          const ebook = book.formats[0];
+          const primaryLink = ebook.links[0];
+          return (
+            <article key={book.id} className={`book-card book-card-${book.theme}`}>
+              <div className="grid gap-8 sm:grid-cols-[190px_1fr]">
+                <a href={`/${book.id}/`} className="mx-auto block w-44 self-start sm:w-full" aria-label={`Read more about ${book.title}`}>
+                  <img src={book.coverImage} alt={book.coverAlt} width="1128" height="1800" loading="lazy" className="w-full rounded-sm shadow-2xl transition-transform duration-500 hover:-translate-y-2" />
+                </a>
+                <div>
+                  <p className="eyebrow">{book.eyebrow}</p>
+                  <h3 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 md:text-4xl">{book.title}</h3>
+                  <p className="mt-2 font-sans text-xs font-semibold uppercase tracking-[.13em] text-stone-500">{book.subtitle}</p>
+                  <p className="mt-5 font-serif text-lg font-semibold leading-7 text-stone-800">{book.shortPromise}</p>
                 </div>
               </div>
 
-              {/* Audio Preview Section */}
-              {book.audioPreview && (
-                <DeepDiveAudio 
-                  audio={book.audioPreview} 
-                  coverImage={book.coverImage} 
-                />
-              )}
-            </div>
-          </div>
-        ))}
+              <ul className="mt-8 space-y-3" aria-label={`What you will gain from ${book.title}`}>
+                {book.outcomes.map((outcome) => (
+                  <li key={outcome} className="flex gap-3 font-serif leading-7 text-stone-700">
+                    <Check className="mt-1 h-5 w-5 flex-none text-current" aria-hidden="true" />
+                    <span>{outcome}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 flex flex-col gap-3 border-t border-stone-900/10 pt-6 sm:flex-row">
+                <a
+                  href={primaryLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-primary flex-1 justify-center"
+                  onClick={() => trackEvent('retailer_click', { book: book.id, format: ebook.type, retailer: primaryLink.retailer })}
+                >
+                  Buy ebook · {ebook.price}
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                </a>
+                <a href={`/${book.id}/`} className="button-secondary flex-1 justify-center" onClick={() => trackEvent('book_detail_click', { book: book.id })}>
+                  Explore the book
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+              </div>
+              <p className="mt-4 text-center font-sans text-xs text-stone-500">Paperback and hardcover also available</p>
+            </article>
+          );
+        })}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default BookSection;

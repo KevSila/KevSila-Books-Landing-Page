@@ -1,61 +1,51 @@
 import React from 'react';
-import { AUTHOR } from '../data';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Headphones } from 'lucide-react';
+import { BOOKS } from '../data';
 
-const Hero: React.FC = () => {
-  return (
-    <header className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-20">
-      <div className="max-w-5xl space-y-12 animate-fade-in-up">
-        {/* Tagline */}
-        <span className="inline-block px-4 py-1.5 rounded-full border border-stone-300 text-stone-600 text-xs md:text-sm tracking-[0.2em] uppercase font-semibold font-sans">
-          {AUTHOR.tagline}
-        </span>
-        
-        {/* Main Title */}
-        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-stone-900 leading-[1.2] md:leading-tight tracking-tight font-bold">
-          Master the Patterns of Your Mind. <br /> 
-          <span className="italic font-serif font-normal text-stone-600">Design the Character of Your Life.</span>
-          <br />
-          
-          {/* Stylish Line Container */}
-          <span className="relative inline-block mt-3 md:mt-6">
-            <span className="relative z-10 font-display italic font-semibold text-stone-900">
-              Principles for a Life Well-Lived
-            </span>
-            {/* Brush Stroke SVG Underline */}
-            <svg 
-              className="absolute -bottom-2 left-0 w-full h-4 text-amber-500/60 -z-0" 
-              viewBox="0 0 200 9" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-            >
-              <path 
-                d="M2.00025 6.99997C25.7509 2.83362 83.2864 -1.16439 197.502 6.99997C198.813 7.0937 186.762 6.50001 187.502 6.50001" 
-                stroke="currentColor" 
-                strokeWidth="3" 
-                strokeLinecap="round"
-              />
-            </svg>
-          </span>
+const Hero: React.FC = () => (
+  <header className="hero-shell overflow-hidden px-5 pb-20 pt-32 md:px-8 md:pb-28 md:pt-40">
+    <div className="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-[1.05fr_.95fr]">
+      <div className="animate-fade-in-up text-center lg:text-left">
+        <p className="eyebrow mb-6">Books by Kenyan author Kevin Yumbya Sila</p>
+        <h1 className="font-display text-[clamp(2.8rem,7vw,5.8rem)] font-black leading-[.98] tracking-[-0.05em] text-stone-950">
+          Reclaim your attention.
+          <span className="mt-3 block font-serif font-normal italic text-stone-600">Build a life of wisdom.</span>
         </h1>
-        
-        <div className="pt-8">
-          <a 
-            href="#books" 
-            className="group inline-flex items-center gap-3 bg-amber-600 text-white px-8 py-4 rounded font-sans font-medium tracking-wide hover:bg-amber-700 transition-all hover:-translate-y-1 shadow-lg shadow-amber-600/20"
-          >
-            Explore The Books
-            <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+        <p className="mx-auto mt-8 max-w-2xl font-serif text-lg leading-8 text-stone-600 md:text-xl lg:mx-0">
+          Two books for depth seekers in a noisy world—one helps you recover focus and presence; the other turns that clarity into character, discernment and legacy.
+        </p>
+        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
+          <a href="#choose-your-book" className="button-primary group">
+            Find your starting point
+            <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" aria-hidden="true" />
+          </a>
+          <a href="#previews" className="button-secondary">
+            <Headphones className="h-4 w-4" aria-hidden="true" />
+            Listen to the previews
           </a>
         </div>
+        <p className="mt-6 font-sans text-xs font-semibold uppercase tracking-[.2em] text-stone-400">
+          Second editions · Ebook, paperback and hardcover
+        </p>
       </div>
-      
-      <div className="absolute bottom-10 left-0 w-full flex justify-center opacity-40">
-        <p className="text-[10px] tracking-[0.3em] uppercase text-stone-900 font-sans font-bold">Scroll to discover</p>
+
+      <div className="relative mx-auto h-[430px] w-full max-w-[520px] sm:h-[540px]" aria-label="Kevin Sila's two books">
+        <div className="absolute left-[2%] top-10 w-[49%] -rotate-3 sm:left-[5%]">
+          <a href="/attention-by-design/" className="book-cover-link group block" aria-label="Explore Attention By Design">
+            <img src={BOOKS[0].coverImage} alt={BOOKS[0].coverAlt} width="1128" height="1800" className="book-cover-image" />
+            <span className="book-cover-caption">Start with clarity</span>
+          </a>
+        </div>
+        <div className="absolute right-[2%] top-0 z-10 w-[49%] rotate-3 sm:right-[5%]">
+          <a href="/the-firelit-mind/" className="book-cover-link group block" aria-label="Explore The Firelit Mind">
+            <img src={BOOKS[1].coverImage} alt={BOOKS[1].coverAlt} width="1128" height="1800" className="book-cover-image" />
+            <span className="book-cover-caption book-cover-caption-fire">Continue with wisdom</span>
+          </a>
+        </div>
+        <div className="hero-glow" aria-hidden="true" />
       </div>
-    </header>
-  );
-};
+    </div>
+  </header>
+);
 
 export default Hero;

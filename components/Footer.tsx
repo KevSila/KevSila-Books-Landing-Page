@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <Linkedin className="w-5 h-5" />
           </a>
           <a 
-            href="mailto:contact@kevinsila.com" 
+            href="mailto:kevinsila100@gmail.com"
             className="p-3 bg-stone-800/30 text-stone-400 hover:text-white hover:bg-stone-800 rounded-full transition-all duration-300 transform hover:-translate-y-1"
             aria-label="Email"
           >
@@ -41,6 +41,7 @@ const Footer: React.FC = () => {
         <div className="text-sm text-center md:text-right font-sans text-stone-500">
           <p>&copy; {new Date().getFullYear()} Kevin Yumbya Sila.</p>
           <p className="mt-1">All rights reserved.</p>
+          <a href="/privacy/" className="mt-3 inline-block underline decoration-stone-700 underline-offset-4 hover:text-stone-300">Privacy</a>
         </div>
       </div>
     </footer>

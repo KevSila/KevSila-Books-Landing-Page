@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kevin Sila Books">
+  <rect width="64" height="64" rx="14" fill="#1c1917"/>
+  <path d="M18 14h7v16l13-16h9L33 31l15 19h-9L25 32v18h-7z" fill="#fff"/>
+  <path d="M48 8c1 8-1 12-6 17 8-2 12-8 10-17z" fill="#ef5b2b"/>
+</svg>
