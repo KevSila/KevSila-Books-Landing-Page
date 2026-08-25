@@ -10,9 +10,9 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="bg-[#f7f4ee] py-16 sm:py-20 md:py-28">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-16 space-y-4">
+        <div className="mb-10 space-y-4 text-center sm:mb-12 md:mb-16">
           <h2 className="font-display text-3xl md:text-4xl text-stone-900">Frequently Asked Questions</h2>
           <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
         </div>
@@ -24,6 +24,9 @@ const FAQ: React.FC = () => {
               className="border border-stone-200 rounded-lg overflow-hidden transition-all duration-300 hover:border-stone-400"
             >
               <button
+                id={`faq-button-${index}`}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-panel-${index}`}
                 className="w-full flex justify-between items-center p-6 text-left bg-stone-50 hover:bg-stone-100 transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
@@ -38,6 +41,10 @@ const FAQ: React.FC = () => {
               </button>
               
               <div 
+                id={`faq-panel-${index}`}
+                role="region"
+                aria-labelledby={`faq-button-${index}`}
+                aria-hidden={openIndex !== index}
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}

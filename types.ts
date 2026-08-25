@@ -1,6 +1,10 @@
+export type BookTheme = 'attention' | 'firelit';
+
 export interface BookLink {
   label: string;
   url: string;
+  retailer: 'Amazon' | 'Selar' | 'Gumroad' | 'Nuria';
+  market?: string;
 }
 
 export interface BookFormat {
@@ -16,17 +20,22 @@ export interface AudioPreview {
   sourceUrl: string;
   heading: string;
   description: string;
-  theme?: 'dark' | 'firelit';
+  theme: BookTheme;
 }
 
 export interface Book {
   id: string;
   title: string;
   subtitle: string;
+  eyebrow: string;
+  shortPromise: string;
   description: string;
   longDescription: string[];
+  outcomes: string[];
+  idealFor: string;
   coverImage: string;
-  themeColor: string;
+  coverAlt: string;
+  theme: BookTheme;
   tags: string[];
   formats: BookFormat[];
   audioPreview?: AudioPreview;
@@ -44,6 +53,7 @@ export interface Testimonial {
   quote: string;
   author: string;
   role: string;
+  book?: string;
 }
 
 export interface FAQItem {

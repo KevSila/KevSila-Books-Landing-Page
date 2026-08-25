@@ -1,0 +1,10 @@
+{
+  "name": "Kevin Sila Books",
+  "short_name": "Kevin Sila",
+  "description": "Books by Kevin Yumbya Sila",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#1c1917",
+  "icons": []
+}

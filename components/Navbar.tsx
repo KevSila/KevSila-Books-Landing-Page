@@ -1,22 +1,24 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
 
-const Navbar: React.FC = () => {
-  return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-stone-50/80 backdrop-blur-md border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <BookOpen className="w-5 h-5 text-stone-800" />
-          <span className="font-display font-semibold tracking-wider text-stone-900">KEVIN SILA</span>
-        </div>
-        <div className="flex gap-6 text-sm font-medium text-stone-600">
-          <a href="#books" className="hover:text-stone-900 transition-colors">Books</a>
-          <a href="#about" className="hover:text-stone-900 transition-colors">About</a>
-          <a href="#contact" className="hover:text-stone-900 transition-colors">Contact</a>
-        </div>
+interface NavbarProps {
+  compact?: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ compact = false }) => (
+  <nav aria-label="Primary navigation" className="fixed left-0 top-0 z-50 w-full border-b border-stone-900/10 bg-[#fbfaf7]/90 backdrop-blur-xl">
+    <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+      <a href="/" className="flex items-center gap-2 text-stone-950" aria-label="Kevin Sila Books home">
+        <BookOpen className="h-5 w-5" aria-hidden="true" />
+        <span className="font-display text-sm font-bold tracking-[.08em] sm:text-base">KEVIN SILA</span>
+      </a>
+      <div className="flex items-center gap-4 font-sans text-xs font-semibold text-stone-600 sm:gap-7 sm:text-sm">
+        <a href={compact ? "/#books" : "#books"} className="nav-link">Books</a>
+        <a href={compact ? "/#about" : "#about"} className="nav-link hidden min-[360px]:inline">About</a>
+        <a href={compact ? "/#previews" : "#previews"} className="nav-cta">Listen free</a>
       </div>
-    </nav>
-  );
-};
+    </div>
+  </nav>
+);
 
 export default Navbar;

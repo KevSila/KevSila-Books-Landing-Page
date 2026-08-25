@@ -1,41 +1,29 @@
 import React from 'react';
+import { Quote } from 'lucide-react';
 import { TESTIMONIALS } from '../data';
-import { Star } from 'lucide-react';
 
-const Testimonials: React.FC = () => {
-  return (
-    <section className="py-24 bg-stone-900 text-stone-100">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="font-display text-3xl md:text-4xl text-white">What Readers Are Saying</h2>
-          <div className="w-16 h-1 bg-amber-600 mx-auto"></div>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {TESTIMONIALS.map((testimonial) => (
-            <div key={testimonial.id} className="bg-stone-800/50 p-8 rounded-lg border border-stone-800 hover:border-stone-700 transition-colors">
-              <div className="flex gap-1 mb-6 text-amber-500">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-current" />
-                ))}
-              </div>
-              <blockquote className="font-serif text-lg leading-relaxed mb-6 text-stone-300 italic">
-                "{testimonial.quote}"
-              </blockquote>
-              <div>
-                <cite className="not-italic font-display font-semibold text-white block">
-                  {testimonial.author}
-                </cite>
-                <span className="text-xs uppercase tracking-wider text-stone-500 font-medium">
-                  {testimonial.role}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+const Testimonials: React.FC = () => (
+  <section className="bg-[#171411] px-5 py-16 text-stone-100 sm:py-20 md:px-8 md:py-28">
+    <div className="mx-auto max-w-6xl">
+      <div className="mb-10 text-center sm:mb-12 md:mb-14">
+        <p className="eyebrow eyebrow-light">Reader reflections</p>
+        <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">What readers are saying</h2>
       </div>
-    </section>
-  );
-};
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {TESTIMONIALS.map((testimonial, index) => (
+          <figure key={testimonial.id} className={`testimonial-card ${index === TESTIMONIALS.length - 1 ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+            <Quote className="h-6 w-6 text-[#ef6a3a]" aria-hidden="true" />
+            {testimonial.book && <p className="mt-5 font-sans text-[10px] font-bold uppercase tracking-[.18em] text-[#ff9a70]">On {testimonial.book}</p>}
+            <blockquote className="mt-4 font-serif text-lg italic leading-8 text-stone-200">“{testimonial.quote}”</blockquote>
+            <figcaption className="mt-7 border-t border-white/10 pt-5">
+              <span className="block font-display font-bold text-white">{testimonial.author}</span>
+              <span className="mt-1 block font-sans text-xs uppercase tracking-wider text-stone-500">{testimonial.role}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 export default Testimonials;
